@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Shop</title>
+  <link rel="shortcut icon" href="c1-assets/logo-header.png" type="image/x-icon">
   <!-- daisy ui / tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -25,7 +26,6 @@
     }
   </style>
 </head>
-
 <body class="font-sora">
   <header class="md:container mx-auto">
     <div class="navbar bg-base-100 shadow-sm">
@@ -62,7 +62,7 @@
     <!-- hero -->
     <div class=" bg-no-repeat  min-h-[500px] bg-bottom bg-contain lg:min-h-[700px] mx-auto p-2 lg:p-5"
       style="background-image: url('c1-assets/cat-big.png');">
-      <div class="max-w-lg pt-10">
+      <div class="max-w-lg pt-10 animate-pulse text-stone-900">
         <h2 class="text-5xl font-display">Pamper Your Pet, Because They Deserve the Bes</h2>
         <p class="py-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
           and
@@ -155,10 +155,11 @@
       <h2 class="text-3xl font-display m-2 pt-2">Trending Pet Products</h2>
       <div class="flex  justify-center gap-4 flex-col lg:flex-row py-14 ">
         <div class="bg-[#F9DF8A] rounded-lg lg:w-96 md:w-4/4 shadow-sm ">
-          <div class="min-h-[400px] bg-no-repeat bg-right-bottom " style="background-image: url('c1-assets/cute-pet-small.png');">
-             <div class="mx-8 pt-10">
-            <h2 class="font-bold text-2xl">T- Shirt For Dogs</h2>
-            <p class="py-4">Discover a world of treats, toys, and essentials handpicked for </p>
+          <div class="min-h-[400px] bg-no-repeat bg-right-bottom "
+            style="background-image: url('c1-assets/cute-pet-small.png');">
+            <div class="mx-8 pt-10">
+              <h2 class="font-bold text-2xl">T- Shirt For Dogs</h2>
+              <p class="py-4">Discover a world of treats, toys, and essentials handpicked for </p>
               <button class="btn">Shop Now</button>
             </div>
           </div>
@@ -276,13 +277,13 @@
       </div>
     </section>
     <!-- Everyday low Price -->
-     <section class="my-24 px-2">
+    <section class="my-24 px-2">
       <h2 class="text-3xl font-display ">Everyday low Price</h2>
-      <div class="flex justify-center flex-col lg:flex-row gap-4 py-4"> 
- <!-- box-1 -->
-     <div class="flex justify-around bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-2xl p-4">
+      <div class="flex justify-center flex-col lg:flex-row gap-4 py-4">
+        <!-- box-1 -->
+        <div class="flex justify-around bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-2xl p-4">
           <div class="space-y-4 items-center mt-10">
-                <h4 class="text-xl">Under Price</h4>
+            <h4 class="text-xl">Under Price</h4>
             <h2 class="text-2xl font-bold">Pet Grooming Mitt</h2>
             <p class="text-xl text-white">(Easy Hair Removal)</p>
             <h1 class="text-5xl">$7.99</h1>
@@ -291,8 +292,8 @@
             <img src="c1-assets/cute-dog-mid.png" alt="">
           </div>
         </div>
-          <!-- box-2 -->
-     <div class="flex justify-around bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-2xl p-4">
+        <!-- box-2 -->
+        <div class="flex justify-around bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-2xl p-4">
           <div class="space-y-4 mt-5">
             <h2 class="text-2xl font-bold">T-Shirt for Dogs</h2>
             <p class="text-5xl text-[#FFDC26]">$7.99</p>
@@ -301,8 +302,43 @@
             <img src="c1-assets/cute-pet-mid.png" alt="">
           </div>
         </div>
-     </section>
+    </section>
+    <!--  -->
+    <section class=" -mb-[280px] lg:-mb-[155px] relative px-5 lg:px-10">
+      <div class="bg-[#FFF9F4] rounded-xl flex justify-center items-center z-99 flex-col lg:flex-row  mx-auto ">
+        <img src="c1-assets/cute-pet-small.png" alt="">
+        <div class="space-y-4 pt-8 text-center lg:text-start">
+          <h3 class="font-display text-2xl">Get Pawsome News!</h3>
+          <p>Exclusive training tips, ticks, product deals and more.</p>
+          <input type="text" placeholder="Enter Email" class="input input-ghost bg-white" />
+          <button class="btn mb-4 bg-[#FFDC26] border-none">Subscribe</button>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer sm:footer-horizontal bg-[#F9DF8A] text-base-content p-10 pt-100">
+    <nav>
+      <div class="flex justify-center">
+        <a> <img src="c1-assets/logo-footer.png" alt=""></a>
+        <a class="text-2xl pl-2 hidden lg:block">Browse <span class="text-[#FFDC26]">4</span>Pets</a>
+      </div>
+      <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
+    </nav>
+    <nav>
+      <a class="link link-hover">Find a pet</a>
+      <a class="link link-hover">Breeds</a>
+      <a class="link link-hover">Contact us</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Follow us</h6>
+      <div class="grid grid-flow-col gap-4 text-2xl">
+        <a><i class="fa-brands fa-facebook"></i> </a>
+        <a><i class="fa-brands fa-square-instagram"></i> </a>
+        <a><i class="fa-brands fa-linkedin"></i></a>
+        <a><i class="fa-brands fa-square-youtube"></i></a>
+      </div>
+    </nav>
+  </footer>
 </body>
 
 </html>
